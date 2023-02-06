@@ -1,0 +1,46 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/jameswhite/Desktop/Turing/Mod4/group_project/streamr-be/app/models/recommendation.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/jameswhite/Desktop/Turing/Mod4/group_project/streamr-be/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/jameswhite/Desktop/Turing/Mod4/group_project/streamr-be/app/models/user.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/jameswhite/Desktop/Turing/Mod4/group_project/streamr-be/app/models/watchlist.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/jameswhite/Desktop/Turing/Mod4/group_project/streamr-be/app/controllers/application_controller.rb": {
+        "lines": [
+          0,
+          0
+        ],
+        "branches": {
+        }
+      }
+    },
+    "timestamp": 1675722786
+  }
+}

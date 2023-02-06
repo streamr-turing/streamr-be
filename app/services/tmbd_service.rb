@@ -8,6 +8,7 @@ class TmbdService
      Faraday.new(url: "https://api.themoviedb.org") do |faraday|
       faraday.params['api_key'] = ENV['tmdb_api_key']
       faraday.params['language'] = 'en-US'
+     end
     end
 
     def self.search_multi(query)
@@ -21,4 +22,5 @@ class TmbdService
     def self.streaming_service(type, id)
       get_url("/3/#{type}/#{id}/watch/providers")
     end
+
   end

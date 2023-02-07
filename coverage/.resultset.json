@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/jameswhite/Desktop/Turing/Mod4/group_project/streamr-be/app/models/recommendation.rb": {
+      "/Users/sean/turing/m4/capstone/streamr-be/app/models/recommendation.rb": {
         "lines": [
           1,
           1,
@@ -9,14 +9,14 @@
           null
         ]
       },
-      "/Users/jameswhite/Desktop/Turing/Mod4/group_project/streamr-be/app/models/application_record.rb": {
+      "/Users/sean/turing/m4/capstone/streamr-be/app/models/application_record.rb": {
         "lines": [
           1,
           1,
           null
         ]
       },
-      "/Users/jameswhite/Desktop/Turing/Mod4/group_project/streamr-be/app/models/user.rb": {
+      "/Users/sean/turing/m4/capstone/streamr-be/app/models/user.rb": {
         "lines": [
           1,
           1,
@@ -25,14 +25,14 @@
           null
         ]
       },
-      "/Users/jameswhite/Desktop/Turing/Mod4/group_project/streamr-be/app/models/watchlist.rb": {
+      "/Users/sean/turing/m4/capstone/streamr-be/app/models/watchlist.rb": {
         "lines": [
           1,
           1,
           null
         ]
       },
-      "/Users/jameswhite/Desktop/Turing/Mod4/group_project/streamr-be/app/controllers/application_controller.rb": {
+      "/Users/sean/turing/m4/capstone/streamr-be/app/controllers/application_controller.rb": {
         "lines": [
           0,
           0
@@ -40,7 +40,7 @@
         "branches": {
         }
       },
-      "/Users/jameswhite/Desktop/Turing/Mod4/group_project/streamr-be/app/services/tmbd_service.rb": {
+      "/Users/sean/turing/m4/capstone/streamr-be/app/services/tmbd_service.rb": {
         "lines": [
           0,
           0,
@@ -73,6 +73,6 @@
         }
       }
     },
-    "timestamp": 1675724810
+    "timestamp": 1675737893
   }
 }

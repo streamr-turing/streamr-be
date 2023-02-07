@@ -1,4 +1,4 @@
-class CreateWatchlists < ActiveRecord::Migration[7.0]
+class CreateWatchlists < ActiveRecord::Migration[5.2]
   def change
     create_table :watchlists do |t|
       t.references :user, null: false, foreign_key: true

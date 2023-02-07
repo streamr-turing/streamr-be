@@ -1,4 +1,4 @@
-class CreateRecommendations < ActiveRecord::Migration[7.0]
+class CreateRecommendations < ActiveRecord::Migration[5.2]
   def change
     create_table :recommendations do |t|
       t.integer :recommendee_id

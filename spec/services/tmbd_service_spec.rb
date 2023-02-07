@@ -29,6 +29,7 @@ RSpec.describe TmbdService do
   end
   it '.streaming_service', :vcr do
     response = TmbdService.streaming_service("movie", 278)
+    #
     expect(response).to be_a Hash
     expect(response[:results]).to have_key :US
     expect(response[:results][:US]).to have_key :link

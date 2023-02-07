@@ -12,7 +12,8 @@ class TmbdService
     end
 
     def self.search_multi(query)
-      get_url("/3/search/multi", { query: "#{query}", page: 1, include_adult: false })
+      # get_url("/3/search/multi", { query: "#{query}", page: 1, include_adult: false })
+      get_url("/3/search/multi?query=#{query}&include_adult=false&page=1")
     end
 
     def self.details(type, id)
@@ -22,5 +23,4 @@ class TmbdService
     def self.streaming_service(type, id)
       get_url("/3/#{type}/#{id}/watch/providers")
     end
-
-  end
+end

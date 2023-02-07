@@ -59,4 +59,6 @@ end
 
 
 gem "graphql", "~> 2.0"
+gem "graphiql-rails"
 gem "diff-lcs", "1.2.0"
+gem 'sass-rails'

@@ -18,8 +18,8 @@ ActiveRecord::Schema.define(version: 2023_02_06_221042) do
   create_table "recommendations", force: :cascade do |t|
     t.integer "recommendee_id"
     t.integer "recommender_id"
-    t.integer "tmbd_id"
-    t.string "type"
+    t.integer "tmdb_id"
+    t.string "media_type"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

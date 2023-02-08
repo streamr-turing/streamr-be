@@ -42,7 +42,7 @@ RSpec.describe 'the fetch user request' do
 
       expect(json).to have_key(:errors)
       expect(json[:errors].first).to have_key(:message)
-      expect(json[:errors].first[:message]).to eq('Artist does not exist.')
+      expect(json[:errors].first[:message]).to eq('User does not exist.')
     end
 
     it 'returns errors if unavailable fields are queried' do 

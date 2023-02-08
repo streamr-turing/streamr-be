@@ -9,6 +9,7 @@ RSpec.describe "CreateRecommendation", type: :request do
     json = JSON.parse(response.body) 
    
      rec = Recommendation.last
+     expect(response.status).to eq 200
      expect(rec.recommender_id).to eq(user_1.id)
      expect(rec.recommendee_id).to eq(user_2.id)
      expect(rec.media_type).to eq('movie')

@@ -1,8 +1,8 @@
 module Mutations
   class CreateRecommendation < BaseMutation 
-    argument :tmdb_id, ID, required: true
-    argument :recommender_id, ID, required: true
-    argument :recommendee_id, ID, required: true
+    argument :tmdb_id, Integer, required: true
+    argument :recommender_id, Integer, required: true
+    argument :recommendee_id, Integer, required: true
     argument :media_type, String, required: true
 
     type Types::RecommendationType

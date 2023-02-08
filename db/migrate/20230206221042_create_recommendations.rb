@@ -3,8 +3,8 @@ class CreateRecommendations < ActiveRecord::Migration[5.2]
     create_table :recommendations do |t|
       t.integer :recommendee_id
       t.integer :recommender_id
-      t.integer :tmbd_id
-      t.string :type
+      t.integer :tmdb_id
+      t.string :media_type
 
       t.timestamps
     end

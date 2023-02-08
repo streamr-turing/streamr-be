@@ -5,7 +5,7 @@ RSpec.describe 'the fetch user request' do
     it 'returns user information' do 
       user_1 = create(:user)
       user_2 = create(:user)
-      rec_1 = Recommendation.create!(recommendee_id: user_1.id, recommender_id: user_2.id, tmdb_id: 8592, media_type: 'tv')
+      Recommendation.create!(recommendee_id: user_1.id, recommender_id: user_2.id, tmdb_id: 8592, media_type: 'tv')
 
       post '/graphql', params: { query: query(user_1.id) }
       json = JSON.parse(response.body, symbolize_names: true)

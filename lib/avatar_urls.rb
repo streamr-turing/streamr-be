@@ -1,0 +1,35 @@
+module AvatarUrls
+  def avatar_urls
+    [
+      "https://cdn-icons-png.flaticon.com/512/3940/3940403.png",
+      "https://cdn-icons-png.flaticon.com/512/3940/3940417.png",
+      "https://cdn-icons-png.flaticon.com/512/3940/3940446.png",
+      "https://cdn-icons-png.flaticon.com/512/3940/3940405.png",
+      "https://cdn-icons-png.flaticon.com/512/3940/3940404.png",
+      "https://cdn-icons-png.flaticon.com/512/3940/3940401.png",
+      "https://cdn-icons-png.flaticon.com/512/3940/3940421.png",
+      "https://cdn-icons-png.flaticon.com/512/3940/3940412.png",
+      "https://cdn-icons-png.flaticon.com/512/3940/3940410.png",
+      "https://cdn-icons-png.flaticon.com/512/3940/3940415.png",
+      "https://cdn-icons-png.flaticon.com/512/3940/3940434.png",
+      "https://cdn-icons-png.flaticon.com/512/3940/3940435.png",
+      "https://cdn-icons-png.flaticon.com/512/3940/3940432.png",
+      "https://cdn-icons-png.flaticon.com/512/3940/3940440.png",
+      "https://cdn-icons-png.flaticon.com/512/3940/3940402.png",
+      "https://cdn-icons-png.flaticon.com/512/3940/3940423.png",
+      "https://cdn-icons-png.flaticon.com/512/3940/3940427.png",
+      "https://cdn-icons-png.flaticon.com/512/3940/3940409.png",
+      "https://cdn-icons-png.flaticon.com/512/3940/3940448.png",
+      "https://cdn-icons-png.flaticon.com/512/3940/3940449.png",
+      "https://cdn-icons-png.flaticon.com/512/3940/3940400.png",
+      "https://cdn-icons-png.flaticon.com/512/3940/3940426.png",
+      "https://cdn-icons-png.flaticon.com/512/3940/3940447.png",
+      "https://cdn-icons-png.flaticon.com/512/3940/3940429.png",
+      "https://cdn-icons-png.flaticon.com/512/3940/3940406.png",
+      "https://cdn-icons-png.flaticon.com/512/3940/3940414.png",
+      "https://cdn-icons-png.flaticon.com/512/3940/3940431.png",
+      "https://cdn-icons-png.flaticon.com/512/3940/3940408.png",
+      "https://cdn-icons-png.flaticon.com/512/3940/3940422.png"
+    ]
+  end
+end

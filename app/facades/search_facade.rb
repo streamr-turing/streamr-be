@@ -16,7 +16,6 @@ class SearchFacade
           end
         end
         search_results = search_results + results
-        require "pry"; binding.pry
       end
     elsif total_pages > 1
       (total_pages - 1).times do |i|

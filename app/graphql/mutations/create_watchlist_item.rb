@@ -1,12 +1,12 @@
 module Mutations
-  class CreateWatchlist < BaseMutation 
+  class CreateWatchlistItem < BaseMutation 
     argument :tmdb_id, Integer, required: true
     argument :user_id, Integer, required: true
     argument :media_type, String, required: true
 
-    type Types::WatchlistType
+    type Types::WatchlistItemType
     def resolve(tmdb_id:, user_id:, media_type:)
-      Watchlist.create!(
+      WatchlistItem.create!(
         tmdb_id: tmdb_id,
         user_id: user_id,
         media_type: media_type

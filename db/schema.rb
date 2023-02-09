@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_02_08_171559) do
+ActiveRecord::Schema.define(version: 2023_02_09_223140) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -31,14 +31,14 @@ ActiveRecord::Schema.define(version: 2023_02_08_171559) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "watchlists", force: :cascade do |t|
+  create_table "watchlist_items", force: :cascade do |t|
     t.bigint "user_id", null: false
     t.integer "tmdb_id"
     t.string "media_type"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["user_id"], name: "index_watchlists_on_user_id"
+    t.index ["user_id"], name: "index_watchlist_items_on_user_id"
   end
 
-  add_foreign_key "watchlists", "users"
+  add_foreign_key "watchlist_items", "users"
 end

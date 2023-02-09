@@ -1,8 +1,8 @@
 require "rails_helper"
 
-RSpec.describe TmbdService do
+RSpec.describe TmdbService do
   it '.search_multi', :vcr do
-    response = TmbdService.search_multi("Avatar")
+    response = TmdbService.search_multi("Avatar", 1)
     expect(response).to be_a Hash
     expect(response[:results]).to be_a Array
     expect(response[:results][0]).to have_key :media_type
@@ -15,7 +15,7 @@ RSpec.describe TmbdService do
     expect(response[:results][0]).to have_key :release_date
   end
   it '.details', :vcr do
-    response = TmbdService.details("movie", 278)
+    response = TmdbService.details("movie", 278)
     expect(response).to be_a Hash
     expect(response).to have_key :id
     expect(response).to have_key :title
@@ -28,7 +28,7 @@ RSpec.describe TmbdService do
     expect(response).to have_key :release_date
   end
   it '.streaming_service', :vcr do
-    response = TmbdService.streaming_service("movie", 278)
+    response = TmdbService.streaming_service("movie", 278)
     #
     expect(response).to be_a Hash
     expect(response[:results]).to have_key :US

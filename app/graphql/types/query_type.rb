@@ -18,9 +18,24 @@ module Types
     null: false,
     description: "Return a single user by ID"
 
-
     def users
       User.all
+    end
+
+    field :shows,
+    [Types::ShowsType],
+    null: false do
+      argument :query, String, required: true
+    end
+    def shows(query:)
+      SearchFacade.search_results(query)
+    end
+
+    field :shows_connection, Types::ShowsType.connection_type, null: false do
+      argument :query, String, required: true
+    end
+    def shows_connection(query:)
+      SearchFacade.search_results(query)
     end
   end
 end

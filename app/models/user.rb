@@ -3,9 +3,9 @@ require './lib/avatar_urls'
 class User < ApplicationRecord
     include AvatarUrls
 
-    has_many :watchlists
-    has_many :sent_recommendations, class_name: "Recommendation", foreign_key: :recommender_id
-    has_many :received_recommendations, class_name: "Recommendation", foreign_key: :recommendee_id
+    has_many :watchlists, dependent: :destroy
+    has_many :sent_recommendations, class_name: "Recommendation", foreign_key: :recommender_id, dependent: :destroy
+    has_many :received_recommendations, class_name: "Recommendation", foreign_key: :recommendee_id, dependent: :destroy
 
     validates_presence_of :username
 

@@ -18,7 +18,6 @@ module Types
     null: false,
     description: "Return a single user by ID"
 
-
     def users
       User.all
     end

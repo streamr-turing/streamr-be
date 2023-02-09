@@ -1,5 +1,5 @@
 module Types
-  class WatchlistType < Types::BaseObject
+  class WatchlistItemType < Types::BaseObject
     field :id, ID, null: false
     field :user_id, Integer, null: false
     field :tmdb_id, Integer, null: false

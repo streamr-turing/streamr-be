@@ -12,6 +12,12 @@ module Types
     [Types::UserType],
     null: false,
     description: "Return a list of all users"
+    
+    field :fetch_user,
+    resolver: Queries::FetchUser,
+    null: false,
+    description: "Return a single user by ID"
+
 
     def users
       User.all

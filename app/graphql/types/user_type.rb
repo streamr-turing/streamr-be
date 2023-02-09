@@ -5,14 +5,13 @@ module Types
     # field :id, ID, null: false
     field :username, String
     field :avatar_url, String
+    # field :watchlists, [Types::WatchlistType], null: false
+    field :recommendations, [Types::RecommendationType], null: false
     field :created_at, GraphQL::Types::ISO8601DateTime, null: false
     field :updated_at, GraphQL::Types::ISO8601DateTime, null: false
 
-    # field :tmdbId, Integer
-    # field :title, String, null: false
-    # field :imageUrl, String
-    # field :yearCreated, String
-    # field :mediaType, String, null: false
-
+    def recommendations
+      object.received_recommendations
+    end
   end
 end

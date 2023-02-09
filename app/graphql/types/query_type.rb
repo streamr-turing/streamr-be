@@ -16,5 +16,15 @@ module Types
     def users
       User.all
     end
+
+    field :shows,
+    [Types::ShowsType],
+    null: false do
+      argument :query, String, required: true
+    end
+
+    def shows(query:)
+      SearchFacade.search_results(query)
+    end
   end
 end

@@ -11,7 +11,7 @@ class TmbdService
      end
     end
 
-    def self.search_multi(query)
+    def self.search_multi(query, page)
       # get_url("/3/search/multi", { query: "#{query}", page: 1, include_adult: false })
       get_url("/3/search/multi?query=#{query}&include_adult=false&page=1")
     end

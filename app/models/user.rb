@@ -7,7 +7,7 @@ class User < ApplicationRecord
     has_many :sent_recommendations, class_name: "Recommendation", foreign_key: :recommender_id, dependent: :destroy
     has_many :received_recommendations, class_name: "Recommendation", foreign_key: :recommendee_id, dependent: :destroy
 
-    validates_presence_of :username
+    validates :username, uniqueness: true, presence: true
 
     after_create :assign_avatar
 

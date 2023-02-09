@@ -1,12 +1,20 @@
 class SearchResult
-  attr_reader :tmdbId, :title, :imageUrl, :yearCreated, :mediaType
+  attr_reader :tmdbId, :title, :yearCreated, :mediaType
 
   def initialize(attributes)
     @tmdbId = attributes[:id]
-    @imageUrl = attributes[:poster_path]
+    @imageUrl = attributes[:poster_path]#create_image_url(attributes)
     @mediaType = attributes[:media_type]
     find_title(attributes)
     find_year(attributes)
+  end
+
+  def create_image_url(attributes)
+    if attributes[:poster_path]
+      return "https://image.tmdb.org/t/p/w500/" + attributes[:poster_path]
+    else
+      return nil
+    end
   end
 
   def find_year(attributes)

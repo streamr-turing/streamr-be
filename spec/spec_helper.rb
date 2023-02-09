@@ -5,8 +5,13 @@
 # files.
 require 'webmock/rspec'
 require 'simplecov'
-SimpleCov.start 'rails'
-SimpleCov.add_filter %w[spec config channels jobs mailers]
+SimpleCov.start do
+  add_filter '/controllers/'
+  add_filter '/graphql/streamr_be_schema.rb'
+end
+#SimpleCov.start 'rails'
+
+#SimpleCov.add_filter %w[spec config controllers channels graphql/types jobs mailers] 
 # Given that it is always loaded, you are encouraged to keep this file as
 # light-weight as possible. Requiring heavyweight dependencies from this file
 # will add to the boot time of your test suite on EVERY test run, even for an

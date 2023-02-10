@@ -18,7 +18,6 @@ class SearchFacade
         search_results = search_results + results
       end
     elsif total_pages > 1
-      # require "pry"; binding.pry
       (total_pages - 1).times do |i|
         results = TmdbService.search_multi(query, i + 2)[:results].map do |result|
           if result[:media_type] != "person"
@@ -28,7 +27,6 @@ class SearchFacade
         search_results = search_results + results
       end
     end
-    # require "pry"; binding.pry
     search_results.compact
   end
 end

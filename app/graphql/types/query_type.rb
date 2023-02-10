@@ -4,10 +4,6 @@ module Types
     include GraphQL::Types::Relay::HasNodeField
     include GraphQL::Types::Relay::HasNodesField
 
-    # Add root-level fields here.
-    # They will be entry points for queries on your schema.
-
-    # TODO: remove me
     field :users,
     [Types::UserType],
     null: false,
@@ -25,22 +21,6 @@ module Types
     field :show_details,
     resolver: Queries::FetchShowDetails,
     null: false
-
-    # field :recommended_by,
-    # [Types::RecommendedByType],
-    # null:false do
-    #   argument :tmdbId, Integer, required: true
-    #   argument :userId, Integer, required: true
-    #   argument :mediaType, String, required: true
-    # end
-
-    # def recommended_by(tmdbId:, userId:, mediaType:)
-    #   recommendations = Recommendation.where(recommendee_id: userId, tmdb_id: tmdbId, media_type: mediaType)
-    #   recs = recommendations.map do |recommendation|
-    #     User.where(id: recommendation[:recommender_id])
-    #   end
-    #   recs
-    # end
 
     field :shows,
     [Types::ShowsType],

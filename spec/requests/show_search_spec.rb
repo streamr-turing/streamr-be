@@ -5,7 +5,6 @@ RSpec.describe 'show search request' do
     it 'returns show search results' do
       post '/graphql', params: { query: query('Avatar') }
       json = JSON.parse(response.body, symbolize_names: true)
-      require "pry"; binding.pry
       data = json[:data][:shows]
       sample = data[0]
 

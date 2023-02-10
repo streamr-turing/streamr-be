@@ -39,7 +39,7 @@ class Show
 
   def format_streaming_data(streaming_data)
     return if streaming_data.nil?
-    formatted_data = streaming_data.each {|provider| provider.delete_if {|key, value| key != :logo_path && key != :provider_name}}
+    formatted_data = streaming_data.each {|provider| provider.delete_if {|key, _value| key != :logo_path && key != :provider_name}}
     formatted_data.each {|provider| provider[:logo_path] = "https://image.tmdb.org/t/p/w500" + provider[:logo_path]}
     formatted_data
   end

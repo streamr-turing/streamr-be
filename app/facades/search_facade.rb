@@ -28,7 +28,7 @@ class SearchFacade
         search_results = search_results + results
       end
     end
-    require "pry"; binding.pry
+    # require "pry"; binding.pry
     search_results.compact
   end
 end

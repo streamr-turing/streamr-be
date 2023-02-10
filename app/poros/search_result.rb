@@ -1,9 +1,9 @@
 class SearchResult
-  attr_reader :tmdbId, :title, :yearCreated, :mediaType
+  attr_reader :tmdbId, :imageUrl, :title, :yearCreated, :mediaType
 
   def initialize(attributes)
     @tmdbId = attributes[:id]
-    @imageUrl = attributes[:poster_path]#create_image_url(attributes)
+    @imageUrl = create_image_url(attributes)
     @mediaType = attributes[:media_type]
     find_title(attributes)
     find_year(attributes)

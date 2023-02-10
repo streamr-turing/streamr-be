@@ -1,5 +1,5 @@
 class Show
-  attr_reader :tmdbId, :title, :releaseYear, :streamingService, :posterUrl, :genres, :rating, :summary, :recommendedBy
+  attr_reader :tmdbId, :title, :releaseYear, :streamingService, :posterUrl, :genres, :rating, :summary, :recommendedBy, :mediaType
 
   def initialize(details, streaming_data, type)
     @tmdbId = details[:id]
@@ -8,6 +8,7 @@ class Show
     @genres = details[:genres].map {|genre| genre[:name]}
     @rating = details[:vote_average]
     @summary = details[:overview]
+    @mediaType = type
     find_title(type, details)
     find_year(type, details)
   end
@@ -37,7 +38,8 @@ class Show
   end
 
   def format_streaming_data(streaming_data)
-    formatted_data = streaming_data.each {|provider| provider.delete_if {|key, value| key != :logo_path && key != :provider_name}}
+    return if streaming_data.nil?
+    formatted_data = streaming_data.each {|provider| provider.delete_if {|key, _value| key != :logo_path && key != :provider_name}}
     formatted_data.each {|provider| provider[:logo_path] = "https://image.tmdb.org/t/p/w500" + provider[:logo_path]}
     formatted_data
   end

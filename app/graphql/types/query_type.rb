@@ -12,7 +12,7 @@ module Types
     [Types::UserType],
     null: false,
     description: "Return a list of all users"
-    
+
     field :fetch_user,
     resolver: Queries::FetchUser,
     null: false,
@@ -21,6 +21,26 @@ module Types
     def users
       User.all
     end
+
+    field :show_details,
+    resolver: Queries::FetchShowDetails,
+    null: false
+
+    # field :recommended_by,
+    # [Types::RecommendedByType],
+    # null:false do
+    #   argument :tmdbId, Integer, required: true
+    #   argument :userId, Integer, required: true
+    #   argument :mediaType, String, required: true
+    # end
+
+    # def recommended_by(tmdbId:, userId:, mediaType:)
+    #   recommendations = Recommendation.where(recommendee_id: userId, tmdb_id: tmdbId, media_type: mediaType)
+    #   recs = recommendations.map do |recommendation|
+    #     User.where(id: recommendation[:recommender_id])
+    #   end
+    #   recs
+    # end
 
     field :shows,
     [Types::ShowsType],

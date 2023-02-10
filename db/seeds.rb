@@ -13,4 +13,7 @@ user4 = User.create!(username: 'sean_not_shaun')
 user5 = User.create!(username: 'the_burger_king')
 
 Recommendation.create!(recommendee_id: user1.id, recommender_id: user2.id, tmdb_id: 4608, media_type: 'tv')
+Recommendation.create!(recommendee_id: user1.id, recommender_id: user3.id, tmdb_id: 4608, media_type: 'tv')
 Recommendation.create!(recommendee_id: user1.id, recommender_id: user3.id, tmdb_id: 8592, media_type: 'tv')
+Recommendation.create!(recommendee_id: user5.id, recommender_id: user4.id, tmdb_id: 4608, media_type: 'tv')
+Recommendation.create!(recommendee_id: user5.id, recommender_id: user4.id, tmdb_id: 274, media_type: 'movie')

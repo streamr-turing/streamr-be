@@ -10,6 +10,7 @@ module Types
     field :genres, [String]
     field :rating, Float
     field :summary, String
+    field :mediaType, String
     
     field :recommendedBy, [Types::UserType]
 

@@ -8,9 +8,13 @@ module Types
 
     field :recommender, Types::UserType
 
-    # field :show, Types::ShowType
+    field :show, Types::ShowType, null: false
 
     field :created_at, GraphQL::Types::ISO8601DateTime, null: false
     field :updated_at, GraphQL::Types::ISO8601DateTime, null: false
+
+    def show 
+      ShowDetailFacade.show_details(object.media_type, object.tmdb_id)
+    end
   end
 end

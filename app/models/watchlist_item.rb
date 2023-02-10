@@ -1,4 +1,4 @@
-class Watchlist < ApplicationRecord
+class WatchlistItem < ApplicationRecord
     belongs_to :user
 
     validates_with MediaTypeValidator

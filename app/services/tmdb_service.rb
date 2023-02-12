@@ -13,7 +13,8 @@ class TmdbService
 
     def self.search_multi(query, page)
       # get_url("/3/search/multi", { query: "#{query}", page: 1, include_adult: false })
-      get_url("/3/search/multi?query=#{query}&include_adult=false&page=#{page}")
+      # get_url("/3/search/multi?query=#{query}&include_adult=false&page=#{page}")
+      get_url("/3/search/tv?query=#{query}&include_adult=false&page=#{page}")
     end
 
     def self.details(type, id)

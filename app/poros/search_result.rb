@@ -2,9 +2,11 @@ class SearchResult
   attr_reader :tmdbId, :imageUrl, :title, :yearCreated, :mediaType
 
   def initialize(attributes)
+    # require 'pry'; binding.pry
     @tmdbId = attributes[:id]
     @imageUrl = create_image_url(attributes)
-    @mediaType = attributes[:media_type]
+    # @mediaType = attributes[:media_type]
+    @mediaType = "tv"
     find_title(attributes)
     find_year(attributes)
   end
@@ -29,7 +31,7 @@ class SearchResult
     if @mediaType == "movie"
       @title = attributes[:title]
     elsif @mediaType == "tv"
-      @title = attributes[:name]
+      @title = attributes[:original_name]
     end
   end
 end

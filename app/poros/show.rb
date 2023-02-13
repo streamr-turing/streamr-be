@@ -3,7 +3,7 @@ class Show
 
   def initialize(details, streaming_data, type)
     @tmdbId = details[:id]
-    @streamingService = format_streaming_data(streaming_data[:flatrate])
+    @streamingService = format_streaming_data(streaming_data)
     @posterUrl = create_poster_url(details)
     @genres = details[:genres].map {|genre| genre[:name]}
     @rating = details[:vote_average]
@@ -38,8 +38,9 @@ class Show
   end
 
   def format_streaming_data(streaming_data)
-    return if streaming_data.nil?
-    formatted_data = streaming_data.each {|provider| provider.delete_if {|key, _value| key != :logo_path && key != :provider_name}}
+    return [] if streaming_data.nil?
+
+    formatted_data = streaming_data[:flatrate].each {|provider| provider.delete_if {|key, _value| key != :logo_path && key != :provider_name}}
     formatted_data.each {|provider| provider[:logo_path] = "https://image.tmdb.org/t/p/w500" + provider[:logo_path]}
     formatted_data
   end

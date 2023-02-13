@@ -18,8 +18,6 @@ RSpec.describe 'show details request' do
 
       WatchlistItem.create!(user_id: user1.id, tmdb_id: 1400, media_type: 'tv')
       WatchlistItem.create!(user_id: user1.id, tmdb_id: 4608, media_type: 'tv')
-      WatchlistItem.create!(user_id: user1.id, tmdb_id: 8592, media_type: 'tv')
-      WatchlistItem.create!(user_id: user1.id, tmdb_id: 8469, media_type: 'movie')
       WatchlistItem.create!(user_id: user2.id, tmdb_id: 1400, media_type: 'tv')
       WatchlistItem.create!(user_id: user5.id, tmdb_id: 1400, media_type: 'tv')
 
@@ -50,16 +48,7 @@ RSpec.describe 'show details request' do
   end
 
   describe 'unsuccessful requests' do
-    # it 'returns errors if unavailable fields are queried' do
-    #   user_1 = create(:user)
-    #
-    #   post '/graphql', params: { query: bad_query(user_1.id, 'jellybeans') }
-    #   json = JSON.parse(response.body, symbolize_names: true)
-    #
-    #   expect(json).to have_key(:errors)
-    #   expect(json[:errors].first).to have_key(:message)
-    #   expect(json[:errors].first[:message]).to eq("Field 'jellybeans' doesn't exist on type 'User'")
-    # end
+
   end
 
   def show_details(tmdbId, userId, mediaType)

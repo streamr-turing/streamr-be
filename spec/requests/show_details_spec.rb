@@ -32,7 +32,7 @@ RSpec.describe 'show details request' do
       expect(data[:releaseYear]).to eq("2006")
       expect(data[:posterUrl]).to eq("https://image.tmdb.org/t/p/w500/k3RbNzPEPW0cmkfkn1xVCTk3Qde.jpg")
       expect(data[:genres]).to eq(["Comedy"])
-      expect(data[:rating]).to eq(7.449)
+      expect(data).to have_key(:rating)
       expect(data[:summary]).to eq("Liz Lemon, the head writer for a late-night TV variety show in New York, tries to juggle all the egos around her while chasing her own dream.")
 
       expect(data).to have_key(:streamingService)

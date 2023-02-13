@@ -7,7 +7,6 @@ RSpec.describe SearchFacade do
       expect(search_results).to be_an Array
       expect(search_results[0]).to be_an_instance_of(SearchResult)
       expect(search_results.count).to be > 20
-      # require "pry"; binding.pry
     end
     it 'caps number of results at 100' do
       search_results = SearchFacade.search_results('the')

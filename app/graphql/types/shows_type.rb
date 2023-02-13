@@ -8,6 +8,8 @@ module Types
     field :imageUrl, String
     field :yearCreated, String
     field :mediaType, String, null: false
+    field :genres, [String]
+    field :rating, Float
     field :created_at, GraphQL::Types::ISO8601DateTime, null: false
     field :updated_at, GraphQL::Types::ISO8601DateTime, null: false
   end

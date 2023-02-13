@@ -23,26 +23,29 @@ RSpec.describe 'show details request' do
       WatchlistItem.create!(user_id: user2.id, tmdb_id: 1400, media_type: 'tv')
       WatchlistItem.create!(user_id: user5.id, tmdb_id: 1400, media_type: 'tv')
 
-      post '/graphql', params: { query: fetch_user(user5.id) }
+      post '/graphql', params: { query: show_details(4608, user1.id, "tv") }
       json = JSON.parse(response.body, symbolize_names: true)
-      data = json[:data][:fetchUser]
-      # require "pry"; binding.pry
+      data = json[:data][:showDetails]
 
       expect(response.status).to eq 200
 
-      expect(data[:id]).to eq("#{user5.id}")
-      expect(data[:username]).to eq('the_burger_king')
-      expect(data[:avatarUrl]).to eq(user5.avatar_url)
+      expect(data[:tmdbId]).to eq(4608)
+      expect(data[:title]).to eq("30 Rock")
+      expect(data[:releaseYear]).to eq("2006")
+      expect(data[:posterUrl]).to eq("https://image.tmdb.org/t/p/w500/k3RbNzPEPW0cmkfkn1xVCTk3Qde.jpg")
+      expect(data[:genres]).to eq(["Comedy"])
+      expect(data[:rating]).to eq(7.449)
+      expect(data[:summary]).to eq("Liz Lemon, the head writer for a late-night TV variety show in New York, tries to juggle all the egos around her while chasing her own dream.")
 
-      expect(data).to have_key(:watchlistItems)
-      expect(data[:watchlistItems]).to be_an(Array)
-      expect(data[:watchlistItems].size).to eq(1)
+      expect(data).to have_key(:streamingService)
+      expect(data[:streamingService]).to be_an(Array)
+      expect(data[:streamingService].size).to eq(2)
 
-      expect(data).to have_key(:recommendations)
-      expect(data[:recommendations]).to be_an(Array)
-      expect(data[:recommendations].size).to eq(2)
-      expect(data[:recommendations][0][:recommender][:id]).to eq("#{user4.id}")
-      expect(data[:recommendations][0][:show][:tmdbId]).to eq(4608)
+      expect(data).to have_key(:recommendedBy)
+      expect(data[:recommendedBy]).to be_an(Array)
+      expect(data[:recommendedBy].size).to eq(2)
+      expect(data[:recommendedBy][0][:id]).to eq("#{user2.id}")
+      expect(data[:recommendedBy][1][:id]).to eq("#{user3.id}")
     end
   end
 
@@ -59,44 +62,33 @@ RSpec.describe 'show details request' do
     # end
   end
 
-  def fetch_user(id)
+  def show_details(tmdbId, userId, mediaType)
     <<~GQL
     query {
-      fetchUser (
-        id: #{id}
-        )
-        {
-          id
-          username
-          avatarUrl
-          watchlistItems {
-            show {
+          showDetails(
+              tmdbId: #{tmdbId}
+              userId: #{userId}
+            	mediaType: "#{mediaType}"
+          )
+          {
               tmdbId
               title
               releaseYear
+              streamingService {
+                logoPath
+                providerName
+              }
               posterUrl
-              mediaType
-            }
-          }
-          recommendations {
-            recommendeeId
-            recommender {
-              id
-              username
-              avatarUrl
-            }
-            show {
-              tmdbId
-              title
-              releaseYear
-              rating
               genres
-              posterUrl
-              mediaType
-            }
-            createdAt
+              rating
+              summary
+            	mediaType
+              recommendedBy {
+                      id
+                      username
+                      avatarUrl
+              }
           }
-        }
       }
     GQL
   end

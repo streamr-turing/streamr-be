@@ -400,7 +400,7 @@ JSON Response Example:
   </tr>
   <tr>
     <td><img src="https://avatars.githubusercontent.com/u/108167041?s=120&v=4"></td>
-    <td><img src="https://avatars.githubusercontent.com/u/106927896?s=120&v=4"></td>
+    <td><img src="https://avatars.githubusercontent.com/u/106927896?s=10&v=2"></td>
     <td><img src="https://avatars.githubusercontent.com/u/108320490?s=120&v=4"></td>
     <td><img src="https://avatars.githubusercontent.com/u/110333328?s=120&v=4"></td>
     <td><img src="https://avatars.githubusercontent.com/u/96136707?s=120&v=4"></td>
@@ -492,3 +492,7 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+  <!-- Markdown -->
+
+![Jokes Card](https://readme-jokes.vercel.app/api)

@@ -388,6 +388,8 @@ JSON Response Example:
 ## Schema
 
 -WIP-
+<img width="1951" alt="tech-stack-BE" src="https://user-images.githubusercontent.com/108167041/218812887-fe17f18f-358a-46b9-8c45-ec1fab2bf5f7.png" width="100" height="600">
+
 
 ## Contributors
 <table>
@@ -400,7 +402,7 @@ JSON Response Example:
   </tr>
   <tr>
     <td><img src="https://avatars.githubusercontent.com/u/108167041?s=120&v=4"></td>
-    <td><img src="https://avatars.githubusercontent.com/u/106927896?s=10&v=2"></td>
+    <td><img src="https://avatars.githubusercontent.com/u/106927896?s=120&v=4"></td>
     <td><img src="https://avatars.githubusercontent.com/u/108320490?s=120&v=4"></td>
     <td><img src="https://avatars.githubusercontent.com/u/110333328?s=120&v=4"></td>
     <td><img src="https://avatars.githubusercontent.com/u/96136707?s=120&v=4"></td>

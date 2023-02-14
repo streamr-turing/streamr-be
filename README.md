@@ -493,6 +493,4 @@ Things you may want to cover:
 
 * ...
 
-  <!-- Markdown -->
 
-![Jokes Card](https://readme-jokes.vercel.app/api)

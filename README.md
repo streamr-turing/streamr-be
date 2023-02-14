@@ -392,34 +392,63 @@ JSON Response Example:
 ## Contributors
 <table>
   <tr>
-    <td>Shawn Lee</td>
-    <td>Madeline Mauser</td>
-    <td>Emily Port</td>
-    <td>Darby Smith</td>
-    <td>William Wang</td>
+    <th>James White</th>
+    <th>Madeline Mauser</th>
+    <th>Sean Culliton</th>
+    <th>William Wang</th>
+    <th>Kathleen Brandt<br>(Project Manager)</th>
   </tr>
   <tr>
-    <td>
-      <a href="https://github.com/Shawnl93">GitHub</a><br>
-      <a href="https://www.linkedin.com/in/shawn-lee-3382aa8b/">LinkedIn</a>
-    </td>
-    <td>
-      <a href="https://github.com/MadelineMauser">GitHub</a><br>
-      <a href="https://www.linkedin.com/in/madeline-mauser-644239245/">LinkedIn</a>
-    </td>
-    <td>
-      <a href="https://github.com/eport01">GitHub</a><br>
-      <a href="https://www.linkedin.com/in/emily-port-3ab6389b/">LinkedIn</a>
-    </td>
-    <td>
-    <a href="https://github.com/DarbySmith">GitHub</a><br>
-    <a href="https://www.linkedin.com/in/darby-m-smith/">LinkedIn</a>
-    </td>
-    <td>
-      <a href="https://github.com/willjw2">GitHub</a><br>
-      <a href="https://www.linkedin.com/in/william-wang-814442240/">LinkedIn</a>
-    </td>
+    <td><img src="https://avatars.githubusercontent.com/u/108167041?s=120&v=4"></td>
+    <td><img src="https://avatars.githubusercontent.com/u/106927896?s=120&v=4"></td>
+    <td><img src="https://avatars.githubusercontent.com/u/108320490?s=120&v=4"></td>
+    <td><img src="https://avatars.githubusercontent.com/u/110333328?s=120&v=4"></td>
+    <td><img src="https://avatars.githubusercontent.com/u/96136707?s=120&v=4"></td>
   </tr>
+
+  <tr>
+    <td>
+      <a href="https://github.com/James-E-White"  rel="nofollow noreferrer">
+          <img src="https://i.stack.imgur.com/tskMh.png" alt="github"> Github
+        </a><br>
+      <a href="https://www.linkedin.com/in/james-ed-wh/" rel="nofollow noreferrer">
+    <img src="https://i.stack.imgur.com/gVE0j.png" alt="linkedin"> LinkedIn
+        </a>
+    </td>
+        <td>
+       <a href="https://github.com/MadelineMauser" rel="nofollow noreferrer">
+            <img src="https://i.stack.imgur.com/tskMh.png" alt="github"> Github
+      </a><br>
+        <a href="https://www.linkedin.com/in/madeline-mauser-644239245/" rel="nofollow noreferrer">
+          <img src="https://i.stack.imgur.com/gVE0j.png" alt="linkedin"> LinkedIn
+      </a>
+    </td>
+        <td>
+       <a href="https://github.com/smculliton" rel="nofollow noreferrer">
+          <img src="https://i.stack.imgur.com/tskMh.png" alt="github"> Github
+      </a><br>
+        <a href="https://www.linkedin.com/in/seanculliton" rel="nofollow noreferrer">
+          <img src="https://i.stack.imgur.com/gVE0j.png" alt="linkedin"> LinkedIn
+      </a>
+    </td>
+        <td>
+       <a href="https://github.com/willjw2" rel="nofollow noreferrer">
+            <img src="https://i.stack.imgur.com/tskMh.png" alt="github"> Github
+      </a><br>
+        <a href="https://www.linkedin.com/in/william-wang-814442240/" rel="nofollow noreferrer">
+          <img src="https://i.stack.imgur.com/gVE0j.png" alt="linkedin"> LinkedIn
+      </a>
+    </td>
+        <td>
+       <a href="https://github.com/KatBrandt" rel="nofollow noreferrer">
+            <img src="https://i.stack.imgur.com/tskMh.png" alt="github"> Github
+      </a><br>
+        <a href="https://www.linkedin.com/in/katbrandt/" rel="nofollow noreferrer">
+          <img src="https://i.stack.imgur.com/gVE0j.png" alt="linkedin"> LinkedIn
+      </a>
+    </td>
+    </tr>
+    
 </table>
 
 ## Gems

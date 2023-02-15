@@ -27,6 +27,7 @@ This project's goal was to synthesize the knowledge accumulated over the course 
 The back-end handles the project's API consumption and acts as the interface to the project's database.
 
 ## Setup
+This application uses Ruby 2.7.2 and Rails 5.2.8.1
 
 1. Clone the repository
 2. Navigate into the root directory
@@ -481,35 +482,15 @@ JSON Response Example:
 - [faraday](https://lostisland.github.io/faraday/usage/)
 - [faker](https://github.com/vajradog/faker-rails)
 - [factory_bot_rails](https://github.com/thoughtbot/factory_bot_rails)
+- [figaro](https://github.com/laserlemon/figaro)
+- [graphql](https://github.com/rmosolgo/graphql-ruby)
+- [graphiql](https://github.com/rmosolgo/graphiql-rails)
+
 
 ## Known Issues/Future Goals
 Future features could include:
-- WIP
-
-
-
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Ability to add other users as friends.
+- Ability to leave individual reviews on shows/movies.
+- Additional recommendations based on popularity or at random.
 
 

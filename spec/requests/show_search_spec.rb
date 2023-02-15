@@ -15,6 +15,8 @@ RSpec.describe 'show search request' do
       expect(sample).to have_key(:imageUrl)
       expect(sample).to have_key(:yearCreated)
       expect(sample).to have_key(:mediaType)
+      expect(sample).to have_key(:rating)
+      expect(sample).to have_key(:genres)
     end
     it 'can return show search results with pagination using a connection' do
       post '/graphql', params: { query: query_connection('Avatar', 5) }
@@ -43,6 +45,8 @@ RSpec.describe 'show search request' do
       expect(sample).to have_key(:imageUrl)
       expect(sample).to have_key(:yearCreated)
       expect(sample).to have_key(:mediaType)
+      expect(sample).to have_key(:rating)
+      expect(sample).to have_key(:genres)
     end
   end
 
@@ -71,6 +75,8 @@ RSpec.describe 'show search request' do
           imageUrl
           yearCreated
           mediaType
+          genres
+          rating
         }
       }
     GQL
@@ -98,6 +104,8 @@ RSpec.describe 'show search request' do
               imageUrl
               yearCreated
               mediaType
+              genres
+              rating
             }
           }
         }

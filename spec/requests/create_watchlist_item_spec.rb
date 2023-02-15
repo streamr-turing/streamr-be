@@ -30,6 +30,17 @@ RSpec.describe "CreateWatchlistItem", type: :request do
         )
     end
 
+    describe 'sad paths' do 
+      it 'returns errors if arguments are missing' do 
+        post '/graphql', params: { query: empty_query }
+        json = JSON.parse(response.body, symbolize_names: true)
+  
+        expect(json).to have_key(:errors)
+        expect(json[:errors].first).to have_key(:message)
+        expect(json[:errors].first[:message]).to eq("Field 'createWatchlistItem' is missing required arguments: tmdbId, userId, mediaType")
+      end
+    end
+
     def query(user_id)
       <<~GQL
       mutation
@@ -39,6 +50,28 @@ RSpec.describe "CreateWatchlistItem", type: :request do
         tmdbId
         userId
         mediaType
+        }
+       }
+     GQL
+    end
+
+    def empty_query
+      <<~GQL
+      mutation
+       { createWatchlistItem
+        {
+        id
+        }
+       }
+     GQL
+    end
+
+    def bad_query(user_id)
+      <<~GQL
+      mutation
+       { createWatchlistItem(tmdbId: 10, userId: #{user_id}, mediaType: "thing" )
+        {
+        id
         }
        }
      GQL

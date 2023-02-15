@@ -407,7 +407,9 @@ JSON Response Example:
 
 ## Schema
 
--WIP-
+![Final Streamr Schema](https://user-images.githubusercontent.com/108320490/219173283-e30c1d71-01e6-4d8b-b338-a4f64f6af29b.png)
+
+
 
 ## Contributors
 <table>

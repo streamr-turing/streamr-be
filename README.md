@@ -16,7 +16,7 @@
 ## Project Overview
 Streamr is an application meant to help users exchange and manage TV show/movie recommendations by creating a space where users can make direct recommendations to other users, browse through TV shows/movies, see the details of a show/movie such as streaming availability, and save those shows/movies to a watchlist for later.
 
-This repo is the back end service of a project built by students at [Turing School of Software and Design](https://turing.edu/). You can find the Front End repo [HERE](https://github.com/streamr-turing/streamr-fe).
+This repo is the back end service of a project built by students at [Turing School of Software and Design](https://turing.edu/). You can find the Front End repo [HERE](https://github.com/streamr-turing/streamr-fe), and the app is deployed [HERE](https://main--frabjous-halva-33ef87.netlify.app/)
 
 
 

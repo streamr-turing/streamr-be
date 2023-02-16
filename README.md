@@ -1,6 +1,6 @@
 <div align="center">
   <h1>Streamr API</h1>
-  <h1>-WIP-</h1>
+
 </div>
 
 ## Table of Contents

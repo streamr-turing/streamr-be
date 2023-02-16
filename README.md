@@ -29,12 +29,19 @@ The back-end handles the project's API consumption and acts as the interface to 
 ## Setup
 This application uses Ruby 2.7.2 and Rails 5.2.8.1
 
+This application uses [The Movie Database (TMDB) API](https://developers.themoviedb.org/3/getting-started/introduction). You will need to register for your own api key. 
+
 1. Clone the repository
 2. Navigate into the root directory
 3. Install gem packages: `bundle install`
 4. Setup the database: `rails db:{drop,create,migrate}`
+5. Configure API key by running `bundle exec figaro install` and then adding the key to `application.yml` file:
+```ruby
+tmdb_api_key: your_key_here
+```
 6. Run `rails s` to start the server
-7. You may run the RSpec test suite locally with `bundle exec rspec`
+7. Visit the endpoint url `http://localhost:3000/graphql` to consume the API locally.
+8. You may run the RSpec test suite locally with `bundle exec rspec`
 
 ## Endpoints
 Back End Server: https://streamr_be.herokuapp.com/
@@ -424,7 +431,7 @@ JSON Response Example:
     <td><img src="https://avatars.githubusercontent.com/u/108167041?s=120&v=4"></td>
     <td><img src="https://avatars.githubusercontent.com/u/106927896?width="200" height="115""></td>
     <td><img src="https://avatars.githubusercontent.com/u/108320490?s=120&v=4"></td>
-    <td><img src="https://avatars.githubusercontent.com/u/110333328?width="200" height="115""></td>
+    <td><img src="https://ca.slack-edge.com/T029P2S9M-U03KQFD5WJK-e1166a8fec70-512?width="200" height="115""></td>
     <td><img src="https://avatars.githubusercontent.com/u/96136707?s=120&v=4"></td>
   </tr>
 

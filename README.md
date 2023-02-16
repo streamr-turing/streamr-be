@@ -426,6 +426,7 @@ JSON Response Example:
     <th>Sean Culliton</th>
     <th>William Wang</th>
     <th>Kathleen Brandt<br>(Project Manager)</th>
+    <th>Hemesh Patel<br>(Project Mentor)</th>
   </tr>
   <tr>
     <td><img src="https://avatars.githubusercontent.com/u/108167041?s=120&v=4"></td>
@@ -433,6 +434,7 @@ JSON Response Example:
     <td><img src="https://avatars.githubusercontent.com/u/108320490?s=120&v=4"></td>
     <td><img src="https://ca.slack-edge.com/T029P2S9M-U03KQFD5WJK-e1166a8fec70-512?width="200" height="115""></td>
     <td><img src="https://avatars.githubusercontent.com/u/96136707?s=120&v=4"></td>
+    <td><img src="https://avatars.githubusercontent.com/u/95383296?s=120&v=4"></td>
   </tr>
 
   <tr>
@@ -473,6 +475,14 @@ JSON Response Example:
             <img src="https://i.stack.imgur.com/tskMh.png" alt="github"> Github
       </a><br>
         <a href="https://www.linkedin.com/in/katbrandt/" rel="nofollow noreferrer">
+          <img src="https://i.stack.imgur.com/gVE0j.png" alt="linkedin"> LinkedIn
+      </a>
+    </td>
+       	<td>
+       <a href="https://github.com/hemeshvpatelHE" rel="nofollow noreferrer">
+            <img src="https://i.stack.imgur.com/tskMh.png" alt="github"> Github
+      </a><br>
+        <a href="https://www.linkedin.com/in/hemeshvpatel/" rel="nofollow noreferrer">
           <img src="https://i.stack.imgur.com/gVE0j.png" alt="linkedin"> LinkedIn
       </a>
     </td>

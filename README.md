@@ -2,6 +2,7 @@
   <h1>Streamr API</h1>
 
 </div>
+![tv (1)](https://user-images.githubusercontent.com/108320490/219521231-82b03510-165b-4cbb-b71c-ca6276c343d1.png)
 
 ## Table of Contents
 - [Project Overview](#project-overview)
